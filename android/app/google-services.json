@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "202557263276",
+    "project_id": "gellery-1fc07",
+    "storage_bucket": "gellery-1fc07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202557263276:android:af16c1daf0c64ec66b7e09",
+        "android_client_info": {
+          "package_name": "com.flutter_wings.gallery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaT2g1SDe9AlRnsn2joG-1H554WdDdzZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
