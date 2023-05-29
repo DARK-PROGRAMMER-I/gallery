@@ -42,6 +42,7 @@ class AuthErrorsNoCurrentUser extends AuthErrors{
   );
 }
 
+// requires-recent-log
 @immutable
 class AuthErrorRequiresRecentLogin extends AuthErrors{
   AuthErrorRequiresRecentLogin(): super(
