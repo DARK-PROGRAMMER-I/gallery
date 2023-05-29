@@ -1,6 +1,8 @@
 
 import 'package:flutter/foundation.dart' show immutable;
 
+Map<String, AuthErrors> authErrorMapping = {};
+
 @immutable
 abstract class AuthErrors {
   final String dialogeTitle;
