@@ -86,6 +86,5 @@ class AuthErrorEmailAlreadyInUse extends AuthErrors{
   AuthErrorEmailAlreadyInUse(): super(
     dialogeTitle: 'Email already in use!',
     dialogeText: 'Please chose another email to register with!',
-
   );
 }
