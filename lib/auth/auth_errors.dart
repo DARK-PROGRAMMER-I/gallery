@@ -33,6 +33,8 @@ class AuthErrorsUnknown extends AuthErrors{
   );
 }
 
+
+// no-current-user
 @immutable
 class AuthErrorsNoCurrentUser extends AuthErrors{
   AuthErrorsNoCurrentUser(): super(
