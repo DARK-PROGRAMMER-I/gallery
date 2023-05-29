@@ -42,3 +42,12 @@ class AuthErrorRequiresRecentLogin extends AuthErrors{
 
   );
 }
+
+@immutable
+class AuthErrorOperationNotAllowed extends AuthErrors{
+  AuthErrorOperationNotAllowed(): super(
+    dialogeTitle: 'Operation not allowed!',
+    dialogeText: 'You can not register using this method at this time!',
+
+  );
+}
