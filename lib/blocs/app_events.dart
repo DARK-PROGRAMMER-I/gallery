@@ -42,3 +42,13 @@ class AppEventsRegister implements AppEvents{
 class AppEventsNavigateToRegister implements AppEvents{
   const AppEventsNavigateToRegister();
 }
+
+@immutable
+class AppEventsNavigateToLogin implements AppEvents{
+  const AppEventsNavigateToLogin();
+}
+
+@immutable
+class AppEventsNavigateToLogin implements AppEvents{
+  const AppEventsNavigateToLogin();
+}
