@@ -1,7 +1,15 @@
 import 'package:firebase_auth/firebase_auth.dart' show FirebaseAuthException ;
 import 'package:flutter/foundation.dart' show immutable;
 
-Map<String, AuthErrors> authErrorMapping = {};
+Map<String, AuthErrors> authErrorMapping = {
+  'user-not-found': AuthErrorUserNotFound(),
+  'weak-password': AuthErrorWeakPassword(),
+  'user-not-found': AuthErrorUserNotFound(),
+  'user-not-found': AuthErrorUserNotFound(),
+  'user-not-found': AuthErrorUserNotFound(),
+  'user-not-found': AuthErrorUserNotFound(),
+  'user-not-found': AuthErrorUserNotFound(),
+};
 
 @immutable
 abstract class AuthErrors {
@@ -54,6 +62,8 @@ class AuthErrorOperationNotAllowed extends AuthErrors{
   );
 }
 
+
+// auth/user-not-found
 @immutable
 class AuthErrorUserNotFound extends AuthErrors{
   AuthErrorUserNotFound(): super(
@@ -62,7 +72,7 @@ class AuthErrorUserNotFound extends AuthErrors{
 
   );
 }
-
+// auth/weak-password
 @immutable
 class AuthErrorWeakPassword extends AuthErrors{
   AuthErrorWeakPassword(): super(
