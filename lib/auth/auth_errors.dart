@@ -24,3 +24,12 @@ class AuthErrorsUnknown extends AuthErrors{
     dialogeTitle: 'Authentication Error',
   );
 }
+
+@immutable
+class AuthErrorsNoCurrentUser extends AuthErrors{
+  AuthErrorsNoCurrentUser(): super(
+    dialogeTitle: 'No Current User!',
+    dialogeText: 'No current user with this information was found!',
+
+  );
+}
