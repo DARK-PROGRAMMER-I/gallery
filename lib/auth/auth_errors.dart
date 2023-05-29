@@ -16,3 +16,11 @@ abstract class AuthErrors {
       authErrorMapping[exception.code.toLowerCase().trim()] ??
       AuthErrorsUnknown();
 }
+
+@immutable
+class AuthErrorsUnknown extends AuthErrors{
+  AuthErrorsUnknown(): super(
+    dialogeText: 'Unknown authentication error occured!',
+    dialogeTitle: 'Authentication Error',
+  );
+}
