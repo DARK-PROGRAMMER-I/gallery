@@ -49,6 +49,6 @@ class AppEventsNavigateToLogin implements AppEvents{
 }
 
 @immutable
-class AppEventsNavigateToLogin implements AppEvents{
-  const AppEventsNavigateToLogin();
+class AppEventsNavigateToGallery implements AppEvents{
+  const AppEventsNavigateToGallery();
 }
