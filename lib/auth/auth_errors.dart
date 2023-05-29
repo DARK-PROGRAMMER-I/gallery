@@ -53,3 +53,12 @@ class AuthErrorOperationNotAllowed extends AuthErrors{
 
   );
 }
+
+@immutable
+class AuthErrorUserNotFound extends AuthErrors{
+  AuthErrorUserNotFound(): super(
+    dialogeTitle: 'User Not Found!',
+    dialogeText: 'This user is not found on server!',
+
+  );
+}
