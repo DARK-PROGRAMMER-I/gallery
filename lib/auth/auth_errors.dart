@@ -33,3 +33,12 @@ class AuthErrorsNoCurrentUser extends AuthErrors{
 
   );
 }
+
+@immutable
+class AuthErrorRequiresRecentLogin extends AuthErrors{
+  AuthErrorRequiresRecentLogin(): super(
+    dialogeTitle: 'Requires Recent Login!',
+    dialogeText: 'You need to logout and login again to perform this action!',
+
+  );
+}
