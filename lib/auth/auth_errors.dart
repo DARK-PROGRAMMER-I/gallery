@@ -62,3 +62,12 @@ class AuthErrorUserNotFound extends AuthErrors{
 
   );
 }
+
+@immutable
+class AuthErrorWeakPassword extends AuthErrors{
+  AuthErrorWeakPassword(): super(
+    dialogeTitle: 'Weak Password!',
+    dialogeText: 'Please chose a strong password consisting of more characters!',
+
+  );
+}
