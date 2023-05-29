@@ -71,3 +71,12 @@ class AuthErrorWeakPassword extends AuthErrors{
 
   );
 }
+
+@immutable
+class AuthErrorInvalidEmail extends AuthErrors{
+  AuthErrorInvalidEmail(): super(
+    dialogeTitle: 'Invalid Email!',
+    dialogeText: 'Please double check your email and try again!',
+
+  );
+}
