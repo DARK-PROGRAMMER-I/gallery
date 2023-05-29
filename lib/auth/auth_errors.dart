@@ -4,11 +4,11 @@ import 'package:flutter/foundation.dart' show immutable;
 Map<String, AuthErrors> authErrorMapping = {
   'user-not-found': AuthErrorUserNotFound(),
   'weak-password': AuthErrorWeakPassword(),
-  'user-not-found': AuthErrorUserNotFound(),
-  'user-not-found': AuthErrorUserNotFound(),
-  'user-not-found': AuthErrorUserNotFound(),
-  'user-not-found': AuthErrorUserNotFound(),
-  'user-not-found': AuthErrorUserNotFound(),
+  'invalid-email': AuthErrorInvalidEmail(),
+  'operation-not-allowed': AuthErrorOperationNotAllowed(),
+  'email-already-in-use': AuthErrorEmailAlreadyInUse(),
+  'requires-recent-login': AuthErrorRequiresRecentLogin(),
+  'no-current-user': AuthErrorsNoCurrentUser(),
 };
 
 @immutable
@@ -51,7 +51,7 @@ class AuthErrorRequiresRecentLogin extends AuthErrors{
   );
 }
 
-
+// operation-not-allowed
 // Email- Authentication is not enabled yet!
 @immutable
 class AuthErrorOperationNotAllowed extends AuthErrors{
@@ -81,7 +81,7 @@ class AuthErrorWeakPassword extends AuthErrors{
 
   );
 }
-
+//invalid-email
 @immutable
 class AuthErrorInvalidEmail extends AuthErrors{
   AuthErrorInvalidEmail(): super(
@@ -91,6 +91,8 @@ class AuthErrorInvalidEmail extends AuthErrors{
   );
 }
 
+
+// email-already-in-use
 @immutable
 class AuthErrorEmailAlreadyInUse extends AuthErrors{
   AuthErrorEmailAlreadyInUse(): super(
