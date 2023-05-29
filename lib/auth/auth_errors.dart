@@ -43,6 +43,8 @@ class AuthErrorRequiresRecentLogin extends AuthErrors{
   );
 }
 
+
+// Email- Authentication is not enabled yet!
 @immutable
 class AuthErrorOperationNotAllowed extends AuthErrors{
   AuthErrorOperationNotAllowed(): super(
